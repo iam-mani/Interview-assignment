@@ -1,0 +1,21 @@
+
+version: '3'
+services:
+  web:
+    image: nginx:latest
+    ports:
+      - "127.0.0.1:8080:80"
+    volumes:
+      - ./index.html:/usr/share/nginx/html/index.html
+      - ./docs.html:/usr/share/nginx/html/docs.html
+      - ./api.html:/usr/share/nginx/html/api.html
+      - ./quickstart.html:/usr/share/nginx/html/quickstart.html
+      - ./:/usr/share/nginx/html/
+
+  cypress:
+    image: cypress/included:8.5.0
+    volumes:
+      - ./cypress:/e2e
+    environment:
+      - CYPRESS_baseUrl=http://web:80
+

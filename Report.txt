@@ -1,0 +1,32 @@
+Hello Madam this is the whole report of my work go through this you will get the the brief knowledge about my work
+
+first i go through the mail fully and noticed every point that you send to me from that i understood what are the things i need to do
+
+What are the things i understood from the mail are
+1.I need to use sock shop project open source code
+2. Need to perfrom TDD and integration testing 
+3.Deploy it in docker and then use the integration testing
+
+What i had done in this assignments are mentioned below
+1. I downloaded the sock shop project and execute it in my local server then i perform manual integration testing from that i identified the missing documents like
+  a)docs.html
+  b)quickstart.html
+  c)api.html
+
+This made me to use automatic testing process because it's a tideous task to check all the missing links so i used python to data scrap the every link from the original website the scraping.ipynb file i had attached in my github you may take a look.
+
+Then i used TDD - Test Driven Development method Red-Green-Refactoring menthod. The method was first i identify the bug then i rewrite the code and then refactor into my local server. Examples of my work are mentioned below.
+
+by using this i firstly identify missing of docs.html and the i extract the code from original website then refactor it.i did as same to quickstart.html and api.html. then i changed the wrong mapping of css file in index.html
+
+
+2. After using both manual and automation integration testing finally attained the bug free website thanks to your guidance links i found is very useful to finish this job.
+
+
+3. Then i deployed my website by using docker process involved to deploy the website
+  a)First i create a image by using -- docker build -t htmlapp:0.1 .
+  b)then i check if the image is created or not by using -- docker image ls -- and it created successfully
+  c)Then i created container by using the command -- docker container run -d --name htmlapp -p 8080:8080 htmlapp:0.1
+  d)the i check whether it is created oor not by using -- docker container ps --- the container is created and deployed successfully website can be able to view at 127.0.0.1:8080 localhost ip address
+
+4.  Finally i submitted my entire code in github and i sended the mail to you

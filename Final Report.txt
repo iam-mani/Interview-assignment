@@ -1,0 +1,29 @@
+Dear Madam,
+
+I am pleased to submit my work report, which includes a summary of the tasks assigned to me, along with the methods and tools I utilized to complete them.
+
+Upon carefully reviewing the instructions you provided, I understood that I needed to accomplish the following tasks:
+  1.Utilize the open-source code from the Sock Shop project.
+  2.Conduct TDD and integration testing.
+  3.Deploy the project using Docker, and subsequently perform integration testing.
+
+To begin, I downloaded the Sock Shop project and executed it on my local server. I conducted manual integration testing and identified the absence of several documents, including docs.html, quickstart.html, and api.html.
+
+Since manually checking each link was a tedious task, I employed automated testing processes. To do so, I used Python to scrape the original website for every link. I have included the scraping.ipynb file on my GitHub page for your perusal.
+
+I also utilized the TDD - Test Driven Development method Red-Green-Refactoring method, which involved identifying bugs, rewriting the code, and refactoring it into my local server. I followed this process to address the missing docs.html, quickstart.html, and api.html documents, as well as correcting a CSS file mapping issue in index.html.
+
+After implementing both manual and automated integration testing, I successfully developed a bug-free website. Your provided guidance links proved extremely useful in completing this task.
+
+Next, I deployed the website using the Docker process.
+  a) Firstly, I created an image using the command "docker build -t htmlapp:0.1." 
+  b)I then verified that the image had been successfully created using the command "docker image ls."
+  c)I proceeded to create a container with the command "docker container run -d --name htmlapp -p 8080:8080 htmlapp:0.1." 
+  d)Finally, I checked the status of the container by utilizing "docker container ps," and confirmed that the website was successfully deployed and accessible at the local IP address 127.0.0.1:8080.
+
+Finally, I have submitted my entire code on GitHub and have sent you an email with my work report attached for your review.
+
+Thank you for the opportunity to complete this assignment.
+
+Sincerely,
+[Manikandan R]
